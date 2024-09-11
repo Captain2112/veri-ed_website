@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_infopage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="pic/fav-icon.png">
+    <title>Veri-Ed</title>
+</head>
+<body>
+
+    <!-- nav-bar -->
+     
+    <nav>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo" >
+                    <img src="pic/logo_veried.png" alt="Veri-Ed Logo" style="width:auto;height: 35px;">
+                </a>
+                <ul class="menu" id="myMenu">
+                    
+                    <li><a href="#">Our Solutions</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="edit_profile_page.html">Profiles</a></li>
+                    <li><a href="#">Contact us</a></li>
+
+                    <div class="search">
+                        <input type="text" placeholder="   Search all topics ">
+                        <button type="submit">               
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="login">
+                        <button class="button" onclick="document.getElementById('id01').style.display='block'"><p>Login<p></button>
+                        
+                    </div>
+                </ul>
+
+                <div class="ham-menu " onclick="toggleHam(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- login -->
+
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="../pic/logo_veried.png" alt="Veri-Ed Logo" style="width:auto;height: 50px;">
+            
+            <div class="header-dis">
+              <h1> Veri Ed specializes in blockchain-based credential verification, helping you ensure the authenticity of your data.</h1>
+            </div>
+            
+          </div>
+      
+          <div class="container-form">
+            <h4>Log in</h4>
+            <label for="uname"><b></b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b></b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              <div class="signup">
+                  <a href="#" class="forgot">forgot password ?</a>
+                  <a href="#" onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="signup-account">Don't have an account? Sign up</a>
+              </div>
+            <button type="submit">Login</button>
+            <div class="text-or">
+              <p>——————————— OR ———————————</p>
+            </div>
+            <div class="signin-with">
+              <button class="button button1">
+                  <i class="fa-brands fa-google"></i>
+                  <p>   Sign in with Google</p>
+              </button>
+              <button class="button button2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <p>   Sign in with facebook</p>
+              </button>
+            </div>
+          </div>
+      
+         
+        </form>
+
+    </div>
+
+    <!-- sign up -->
+
+    <div id="id02" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02 ').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="../pic/logo_veried.png" alt="Veri-Ed Logo" style="width:auto;height: 50px;">
+            
+            <div class="header-dis">
+              <h1> Veri Ed specializes in blockchain-based credential verification, helping you ensure the authenticity of your data.</h1>
+            </div>
+            
+          </div>
+      
+          <div class="container-form">
+            <h4>Sign Up</h4>
+            <label for="uname"><b></b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="E-mail"><b></b></label>
+            <input type="email" placeholder="Enter email" name="email" required>
+      
+            
+            <label for="psw"><b></b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+      
+              <div class="signup">
+
+                    <div class="checkmark">
+                        <div class="checkbox-wrapper-1">
+                            <input id="example-1" class="substituted" type="checkbox" aria-hidden="true"/>
+                            <label for="example-1"></label>
+                        </div>
+
+                        <p>Veri Ed account you agree to our </p>
+                        <a href="#">Terms of Use</a>
+                    </div>
+                  
+              </div>
+            <button type="submit">Sign up</button>
+
+            <div class="have-account">
+                <a href="#" onclick="document.getElementById('id02').style.display='none'" style="width:auto;" class="signup-account">Do you already have an account? Login</a>
+            </div>
+            
+            
+            <div class="text-or">
+              <p>——————————— OR ———————————</p>
+            </div>
+            <div class="signin-with">
+              <button class="button button1">
+                  <i class="fa-brands fa-google"></i>
+                  <p>   Sign in with Google</p>
+              </button>
+              <button class="button button2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <p>   Sign in with facebook</p>
+              </button>
+            </div>
+          </div>
+      
+         
+        </form>
+    </div>
+
+
+
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="header-topic">
+
+                <div class="header-info">
+                    <h1>
+                        Instantly Access 
+                        Data for Blockchains
+                    </h1>
+                    <p>
+                        Veri-Ed is your reliable partner for fast and dependable 
+                        blockchain data solutions.
+                    </p>
+                    <div class="info-bt">
+                        <div class="get-start">
+                            <a href="index.html">
+                                <button class="button"><p>Back to home page</p></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_form">
+
+                    <form action="/action_page.php">
+                        <input type="text" id="fname" name="firstname" placeholder="     Your name..">
+                        <input type="text" id="lname" name="lastname" placeholder="     E-mail..">
+                        <input type="text" id="fname" name="firstname" placeholder="     Institution Name..">
+                        <input type="text" id="lname" name="lastname" placeholder="     Website..">
+
+                        <div class="checkmark">
+                            <div class="checkbox-wrapper-1">
+                                <input id="example-1" class="substituted" type="checkbox" aria-hidden="true"/>
+                                <label for="example-1"></label>
+                            </div>
+
+                            <p>I agree with the </p>
+                            <a href="#">Terms of Use</a>
+                            <p>and</p>
+                            <a href="#">Privacy Policy*</a>
+                            
+                        </div>
+                        
+                        <div class="bt-submit">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                    
+                </div>
+                
+            </div>
+            <div class="header-buttom">
+                <div class="box-topic">
+                    <img src="pic/approval.png" alt="Blockchain Verification" style="width:auto;height: 100px;">
+                    <a href="#">Blockchain Verification</a>
+                    <p>We use low-energy blockchain technology to ensure your credentials are tamper-proof and unwanted edits aren't possible.</p>
+                </div>
+                <div class="box-topic">
+                    <img src="pic/chat _info.png" alt="Easy Issuance" style="width:auto;height: 100px;">
+                    <a href="#">Easy Issuance</a>
+                    <p>Issue one credential at a time, in bulk or via an API from your system. It's up to you.</p>
+                </div>
+                <div class="box-topic">
+                    <img src="pic/cv.png" alt="Create Resume" style="width:auto;height: 100px;">
+                    <a href="#">Create Resume</a>
+                    <p>Create your resume easily and independently.</p>
+                </div>
+                
+            </div>
+            <div class="bt-down">
+                <a href="index.html">
+                    <div class="down-bottom">
+                        <i class="fa-solid fa-chevron-down"></i>    
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- main info -->
+
+    <div class="container">
+        <div class="main-top">
+            <div class="profile-ex"></div>
+            <div class="verify-info">
+                <h1>Verified skill profiles</h1>
+                <p>Our machine learning model swiftly analyzes your data to generate personalized skill profiles. This empowers learners to identify their strengths and areas for improvement.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-bottom-box">
+
+            <div class="main-bottom">
+                <div class="started-info">
+                    <h1>Start creating credentials for free</h1>
+                    <p>Secure your identity with Veri Ed™. Get 5 free credentials. 
+                        No credit card required. Try it now!</p>
+                    <button class="button"><p>Get started for free</p></button>   
+                </div>
+                <div class="box-pic-info">
+                    <div class="box-Eco-friendly-info">
+                        <img src="pic/blockchain.png" alt="blockchain" style="width:auto;height: 150px;">
+                        <p>Eco-friendly blockchain
+                            Unlike our competitors, we use a low-energy blockchain technology which is carbon neutral and sustainable.</p>    
+                    </div>
+                    <div class="box-our-designer">
+                        <img src="pic/typography.png" alt="typography" style="width:auto;height: 150px;">
+                        <p>You don't have to be a designer to create credentials. Build a beautiful credential which reflects your brand, while our designer assists you along the way automatically.</p>    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="logo">
+                    <img src="pic/logo_veried.png" alt="Veri-Ed Logo" style="width:auto;height: 35px;">
+                </div>
+                <ul class="footer-topic">
+                    <div class="box-footer-company">
+                        <p>Our Company</p>
+                        <li><a href="#">Contact us</a></li>
+                    </div>
+                    <div class="box-footer-wedo">
+                        <p>What We Do</p>
+                        <li><a href="#">Our Solutions</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>© Copyright 2024, Veri ed</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js script.js -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
