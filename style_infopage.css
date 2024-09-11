@@ -691,7 +691,7 @@ footer{
 
 }
 
-@media only screen and (min-width: 1550px) {
+@media only screen and (min-width: 1024px) {
     .ham-menu {
         display: none;
     }
@@ -762,85 +762,7 @@ footer{
 }
 
 @media only screen and (max-width: 1550px) {
-    .menu {
-        display: none;
-    }
-    .nav-wrapper{
-        padding: 1rem;
-        height: auto;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .menu-active {
-        display: block !important;
-    }
-    .menu {
-        width: 100%;
-    }
-    .menu li{
-        margin:0; 
-        margin-top: 0.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        height: 50px;
-        padding: 0 0.5rem;
-        cursor: pointer;
-        transition: 0.3s;    
-    }
-    .menu li:hover{
-        background-color: #40A578;
-        
-    }
-    .menu li a:hover{
-        color: #fff;
-    }
-    .search{
-        padding: 0;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-
-    }
-    .search input[type=text] {
-        width: 100%;
-        padding: 0;
-    }
-    .login{    
-        padding: 0 0.3rem ;
-        margin-bottom: 1rem;
-    }
-    .login button{
-        width: 100% ;
-        height: 35px;
-        border: none;
-        font-weight: 700;
-        font-size: 1rem;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        background-color: #40A578;
-        border-radius: 15px;
-    }
-    
-    .search button{
-        height: 35px;
-        width: 37px;
-        border-radius: 20px;
-        border: none;
-        background-color: #40A578;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-    }
-
     /* header */
-
 
     header {
         border-bottom-left-radius:0;
@@ -850,7 +772,6 @@ footer{
         align-items: flex-start;
         padding-top: 0;
         border-bottom-left-radius: 80px;
-        
     }
 
 
@@ -1224,7 +1145,8 @@ footer{
     }
 
     /* Change styles for span and cancel button on extra small screens */
-    @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+
     span.psw {
         display: block;
         float: none;
@@ -1253,6 +1175,85 @@ footer{
     .signup a{
         padding: 5px 5px;
     }
+
+    /* ***nav*** */
+
+    .menu {
+        display: none;
+    }
+    .nav-wrapper{
+        padding: 1rem;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu-active {
+        display: block !important;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu li{
+        margin:0; 
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 50px;
+        padding: 0 0.5rem;
+        cursor: pointer;
+        transition: 0.3s;    
+    }
+    .menu li:hover{
+        background-color: #40A578;
+        
+    }
+    .menu li a:hover{
+        color: #fff;
+    }
+    .search{
+        padding: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+    .search input[type=text] {
+        width: 100%;
+        padding: 0;
+    }
+    .login{    
+        padding: 0 0.3rem ;
+        margin-bottom: 1rem;
+    }
+    .login button{
+        width: 100% ;
+        height: 35px;
+        border: none;
+        font-weight: 700;
+        font-size: 1rem;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: #40A578;
+        border-radius: 15px;
+    }
+    .search button{
+        height: 35px;
+        width: 37px;
+        border-radius: 20px;
+        border: none;
+        background-color: #40A578;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
     /* header */
     
     

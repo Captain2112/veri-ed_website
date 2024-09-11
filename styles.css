@@ -832,88 +832,13 @@ input[type=text], input[type=password] ,input[type=email]{
 }
 
 
-@media only screen and (min-width: 1550px) {
+@media only screen and (min-width: 1024px) {
     .ham-menu {
         display: none;
     }
 }
 
 @media only screen and (max-width: 1550px) {
-    .menu {
-        display: none;
-    }
-    .nav-wrapper{
-        padding: 1rem;
-        height: auto;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .menu-active {
-        display: block !important;
-    }
-    .menu {
-        width: 100%;
-    }
-    .menu li{
-        margin:0; 
-        margin-top: 0.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        height: 50px;
-        padding: 0 0.5rem;
-        cursor: pointer;
-        transition: 0.3s;    
-    }
-    .menu li:hover{
-        background-color: #40A578;
-        
-    }
-    .menu li a:hover{
-        color: #fff;
-    }
-    .search{
-        padding: 0;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-
-    }
-    .search input[type=text] {
-        width: 100%;
-        padding: 0;
-    }
-    .login{    
-        padding: 0 0.3rem ;
-        margin-bottom: 1rem;
-    }
-    .login button{
-        width: 100% ;
-        height: 35px;
-        border: none;
-        font-weight: 700;
-        font-size: 1rem;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        background-color: #40A578;
-        border-radius: 15px;
-    }
-    .search button{
-        height: 35px;
-        width: 37px;
-        border-radius: 20px;
-        border: none;
-        background-color: #40A578;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-    }
 
     /* header */
 
@@ -1112,6 +1037,86 @@ input[type=text], input[type=password] ,input[type=email]{
     }
     .signup a{
         padding: 5px 5px;
+    }
+
+
+    /* ***nav*** */
+
+
+    .menu {
+        display: none;
+    }
+    .nav-wrapper{
+        padding: 1rem;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu-active {
+        display: block !important;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu li{
+        margin:0; 
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 50px;
+        padding: 0 0.5rem;
+        cursor: pointer;
+        transition: 0.3s;    
+    }
+    .menu li:hover{
+        background-color: #40A578;
+        
+    }
+    .menu li a:hover{
+        color: #fff;
+    }
+    .search{
+        padding: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+    .search input[type=text] {
+        width: 100%;
+        padding: 0;
+    }
+    .login{    
+        padding: 0 0.3rem ;
+        margin-bottom: 1rem;
+    }
+    .login button{
+        width: 100% ;
+        height: 35px;
+        border: none;
+        font-weight: 700;
+        font-size: 1rem;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: #40A578;
+        border-radius: 15px;
+    }
+    .search button{
+        height: 35px;
+        width: 37px;
+        border-radius: 20px;
+        border: none;
+        background-color: #40A578;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
     }
 }
 @media screen and (max-width: 860px) {
@@ -1525,7 +1530,22 @@ input[type=text], input[type=password] ,input[type=email]{
     display: none;
 }
 
-@media screen and (max-width: 1669px) {
+
+@media screen and (max-width: 1360px) {
+    .form-name{
+        padding: 0 50px 100px 50px;;
+    }
+    .profile-container {
+        padding: 20px 50px 70px 50px;
+    }
+    .form-account {
+        padding: 70px 50px 70px 50px;
+    }
+    .form-first-name {
+        gap: 30px;
+    }
+} 
+@media screen and (max-width: 900px) {
     .sidenav {
         height: 100%;
         width: 0;
@@ -1572,8 +1592,8 @@ input[type=text], input[type=password] ,input[type=email]{
         border-radius: 30px;
       }
       
-  }
-  @media screen and (max-width: 900px) {
+
+
         .form-name{
             padding: 0 20px 100px 20px;;
         }
@@ -1713,7 +1733,7 @@ a.collection-box p:hover {
     margin-bottom: 80px;
 }
 
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1640px) {
     .resume-profile-pic {
         padding: 50px 50px;
     }
@@ -1728,6 +1748,33 @@ a.collection-box p:hover {
     }
     .verify-container-insert {
         padding: 50px 50px 100px 50px;
+    }
+}
+
+@media screen and (max-width: 1312px){
+    p.ability-green {
+        font-size: 0.8rem;
+        margin-right: 5px;
+    }
+    p.ability-white {
+        font-size: 0.8rem;
+        margin-right: 5px;
+    }
+    a.ability-plus {
+        width: 38px;
+        height: 38px;
+        border-radius: 19px;
+    }
+}
+@media screen and (max-width: 1150px){
+    .resume-profile-pic{
+        padding: 50px 20px 50px 20px;
+    }
+    .box-ability{
+        padding: 0 20px;
+    }
+    .collection-container{
+        padding: 20px;
     }
 }
 @media screen and (max-width: 800px){
