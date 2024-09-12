@@ -111,8 +111,6 @@ nav {
 
 
 
-
-
 /* ham menu */
   .ham-menu {
     display: inline-block;
@@ -141,7 +139,6 @@ nav {
   .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
   }
-
 
 
 
@@ -948,8 +945,6 @@ input[type=text], input[type=password] ,input[type=email]{
         width: 100%;
         gap: 30px;
     }
-
-    
     .box-Eco-friendly-info{
         margin: 0;
         display: flex;
