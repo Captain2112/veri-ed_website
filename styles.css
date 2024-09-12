@@ -1805,3 +1805,81 @@ a.collection-box p:hover {
 
     }
 }
+
+
+/* ***************************profile-resume-page****************************** */
+.profile-resume-container{
+    padding: 70px 300px;
+
+}
+.setting-icon {
+    margin-left: 200px;
+
+}
+.setting-icon i{
+    font-size: 2.2rem;
+    color: #555555;
+}
+.setting-icon i:hover{
+    color: #40A578;
+}
+.collection-container{
+    margin-top: 20px;
+}
+a.collection-box p{
+    color: #555555;
+}
+.verify-pf-container-insert{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+.verify-collection img{
+    width: 200px;
+    opacity: 80%;
+    filter: grayscale(100%);
+}
+.verify-collection p{
+    margin-top: 20px;
+    color: #9f9f9f;
+}
+.verify-collection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pf-setting a{
+    display: none;
+}
+@media screen and (max-width: 1670px){
+    .profile-resume-container{
+        padding: 70px 150px;
+    }
+}
+@media screen and (max-width: 1050px){
+    .setting-icon {
+        margin-left: 60px;
+    }
+}
+@media screen and (max-width: 800px){
+    .setting-icon {
+        display: none;
+    }
+    .pf-setting{
+        display: flex;
+        justify-content: space-between;
+    }
+    .pf-setting a{
+        display: flex;
+        text-decoration: none;
+        margin: 0;
+
+    }
+}
+@media screen and (max-width: 630px){
+    .profile-resume-container{
+        padding: 70px 20px;
+    }
+}
