@@ -1720,9 +1720,16 @@ a.collection-box p:hover {
     font-size: 2rem;
     color:#D9D9D9 ;
 }
+.form-resume-editpage{
+    width: 100%;
+    height: 1600px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
 .form-resume{
     width: 100%;
-    height: 1500px;
+    height: 100%;
     background-color: #FFFFFF;
     border-radius: 20px;
     margin-bottom: 80px;
@@ -1742,6 +1749,9 @@ a.collection-box p:hover {
         padding: 20px 50px 20px 50px;
     }
     .verify-container-insert {
+        padding: 50px 50px 100px 50px;
+    }
+    .verify-pf-container-insert{
         padding: 50px 50px 100px 50px;
     }
 }
@@ -1828,7 +1838,9 @@ a.collection-box p{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
+    padding: 20px 150px 100px 150px;
+
+
 }
 .verify-collection img{
     width: 200px;
@@ -1839,24 +1851,192 @@ a.collection-box p{
     margin-top: 20px;
     color: #9f9f9f;
 }
+.verify-collection h2{
+    font-size: 1rem;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+
+}
 .verify-collection{
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
+
 }
 .pf-setting a{
     display: none;
+}
+.certificates-box-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.certi-box{
+    border: 1px solid #757575;
+    padding: 30px 30px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px rgb(197, 197, 197);
+}
+.certi-box h3{
+    color: #404040;
+
+}
+.certi-box p{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.certi-icon{
+
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.certi-icon a {
+    text-decoration: none;
+}
+.certi-icon a i{
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    background: #e0e7ee;
+    color: #006769;
+}
+
+/* ................................... */
+.about-container{
+    /* border: 1px solid red; */
+    padding: 0px 150px;
+    margin-top: 30px;
+}
+.about-box {
+    background-color: #E9EEF6;
+    border-radius: 10px;
+    padding: 30px 50px;
+}
+.education-box{
+    background-color: #E9EEF6;
+    border-radius: 10px;
+    padding: 30px 50px 40px 50px;
+
+}
+.education-box h3{
+    color: #444;
+}
+.about-box h3{
+    color: #444;
+    margin-bottom: 5px;
+}
+.about-box p{
+    color: #737373;
+    font-size: 0.9rem;
+}
+.experience{
+    margin-top: 20px;
+}
+.experience-topic{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 20px;
+}
+.experience-topic i{
+    font-size: 2rem;
+    color: #006769;
+}
+.experience-topic .info h4{
+    color: #444;
+}
+.experience-topic .info li{
+    color: #737373;
+}
+.experience-box{
+    margin-bottom: 10px;
+}
+.edu-topic{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+.edu-topic i{
+    font-size: 2rem;
+    color: #006769;
+}
+.edu-topic p{
+    color: #737373;
+}
+.seemore-box{
+
+    padding: 10px 50px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    background-color: #40A578;
+}
+.seemore-box a{
+    text-decoration: none;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    justify-content: center;
+}
+.seemore-box a:hover{
+    color: #bcbcbc;
+}
+.seemore-box a p{
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 @media screen and (max-width: 1670px){
     .profile-resume-container{
         padding: 70px 150px;
     }
 }
+@media screen and (max-width: 1640px){
+    .about-container{
+        padding: 0px 50px;
+    }
+}
+@media screen and (max-width: 1470px){
+    .form-resume{
+        height: 100%;
+    }
+    .verify-collection{
+        margin-bottom: 50px;
+    }
+    .verify-pf-container-insert{
+        padding: 20px 50px;
+    }
+
+}
 @media screen and (max-width: 1050px){
     .setting-icon {
         margin-left: 60px;
     }
+}
+@media screen and (max-width: 1250px){
+    .certi-icon {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 900px){
+    .profile-resume-container{
+        padding: 50px 100px;
+    }
+
 }
 @media screen and (max-width: 800px){
     .setting-icon {
@@ -1872,9 +2052,23 @@ a.collection-box p{
         margin: 0;
 
     }
+    .certificates-box-container {
+        flex-direction: column;
+    }
+    .about-container{
+        padding: 0px 20px;
+    }
 }
 @media screen and (max-width: 630px){
     .profile-resume-container{
         padding: 70px 20px;
+    }
+}
+@media screen and (max-width: 460px){
+    .about-box{
+        padding: 30px 15px;
+    }
+    .education-box{
+        padding: 30px 15px;
     }
 }
